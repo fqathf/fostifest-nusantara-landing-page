@@ -1,0 +1,245 @@
+/* Global Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+* {
+  font-family: 'Plus Jakarta Sans';
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #D4EBFF;    
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.text-stroke {
+  -webkit-text-stroke: 1px #000;
+}
+
+/* Bagian Header*/
+header {
+  z-index: 100;
+}
+.nav-logo {
+  width: 17.5625rem;
+  height: 2.625rem;
+  flex-shrink: 0;
+  z-index: 3;
+}
+.nav-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.nav-text {
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+}
+
+/* Bagian Home / Main */
+main {
+  background-image: url("assets/background/bg_nusantara_main.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 120vh;
+}
+#main-icon {
+  -webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#main-icon:hover {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* Bagian Rute */
+#rute-section {
+  height: 120vh;
+  background-image: url("assets/background/bg_rute.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.rute-box {
+  z-index: 3; 
+  width: 40vw;
+}
+.rute-box:hover {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+#title-rute {
+  height: 50px;
+}
+#rute-title {
+  height: 100vh;
+  z-index: 1;
+}
+#rute-box1 {
+  height: 50px;
+  margin-bottom: -160px;
+}
+#rute-box2 {
+  margin-top: -160px;
+  height: 50px;
+}
+
+/* Bagian Tentang/About */
+#about-section {
+  height: 120vh;
+  background-image: url("assets/background/bg_about.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+#about-description p {
+  font-size: 20px; 
+  font-weight: 600;
+}
+/* Modal Bagian Tentang/About */
+#modalAbout {
+  font-family: Montserrat;
+}
+
+/* Bagian Kontak */
+#contact-section {
+  width: 100%;
+  height: 120vh;
+  background-image: url("assets/background/bg_kontak.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+#contact-textbox p {
+  font-size: 16px;
+  font-weight: 600;
+}
+#contact-textbox a {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Animasi */
+/*.scale-in-center {
+	animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}*/
+@-webkit-keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+  }
+  /*@-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }*/
+
+/* Responsive Styling */
+  
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  main {
+    background-image: url("assets/background/bg_nusantara_main.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
+  #rute-section {
+    height: 100vh;
+    background-image: url("assets/background/bg_rute.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .rute-box {
+    z-index: 3; 
+    width: 60vw;
+  }
+  #title-rute {
+    height: 100px;
+    margin-top: 80px;
+    margin-bottom: -100px;
+  }
+  #rute-title {
+    height: 120vh;
+    z-index: 1;
+  }
+  #about-description p {
+    font-size: 16px; 
+    font-weight: 500;
+  }
+  #contact-section {
+    width: 100%;
+    height: 180vh;
+    background-image: url("assets/background/bg_kontak.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bandung Tour On Bus</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <!-- Bagian Header -->
+    <header
+      class="navbar navbar-expand-lg mx-0 px-0 py-3 row col-12 d-flex flex-lg-row flex-column align-items-center justify-content-center text-center"
+    >
+      <div class="left-nav row d-flex flex-lg-row flex-column-reverse col-12 col-lg-6 justify-content-center justify-content-lg-end align-items-center">
+        <div class="navbox1-div row col-12 col-lg-5 d-flex flex-row justify-content-center justify-content-lg-end">
+            <div class="nav-box col-6 col-lg-6">
+                <a class="nav-text text-center text-stroke" href="/">Home</a>
+            </div>
+            <div class="nav-box col-6 col-lg-6">
+                <a class="nav-text text-center text-stroke" href="#rute-section">Rute</a>
+            </div>
+        </div>
+        <div class="nav-logo col-12 col-lg-3 d-flex justify-content-center">
+            <img src="assets/logo/header_logo.svg" alt="" />
+        </div>
+      </div>
+      <div class="right-nav row col-12 col-lg-4 d-flex flex-row justify-content-center justify-content-lg-start">
+        <div class="nav-box col-6 col-md-4">
+            <a class="nav-text text-center text-stroke" href="#about-section">Tentang</a>
+        </div>
+        <div class="nav-box col-6 col-lg-4 text-stroke">
+            <a class="nav-text text-center text-stroke" href="#contact-section">Kontak</a>
+        </div>
+      </div>
+    </header>
+    <!-- Bagian Home / Main -->
+    <main class="px-0 mx-0 col-12 d-flex justify-content-center align-items-start">
+      <img
+        id="main-icon"
+        class="col-9 col-md-6"
+        src="assets/main-icon-final.svg"
+        alt=""
+      />
+    </main>
+    <!-- Bagian Rute -->
+    <div id="rute-section" class="col-12 mt-5 p-5 mx-0 row">
+      <div
+        id="rute-box1"
+        class="col-12 mt-5 d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <img
+          class="rute-box col-12 col-md-6"
+          src="assets/text-box/rutehijau.svg"
+          alt=""
+        />
+        <img
+          class="rute-box col-12 col-md-6"
+          src="assets/text-box/rutekuning.svg"
+          alt=""
+        />
+      </div>
+      <div
+        id="title-rute"
+        class="col-12 d-flex justify-content-center align-items-center"
+      >
+        <img
+          class="col-12 col-md-6"
+          id="rute-title"
+          src="assets/text-box/rutetitle-circle2.svg"
+          alt=""
+        />
+      </div>
+      <div
+        id="rute-box2"
+        class="col-12 d-flex flex-column flex-md-row justify-content-between align-items-center pt-5 pb-5"
+      >
+        <img
+          class="rute-box col-12 col-md-6"
+          src="assets/text-box/rutebiru.svg"
+          alt=""
+        />
+        <img
+          class="rute-box col-12 col-md-6"
+          src="assets/text-box/ruteungu.svg"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- Bagian Tentang -->
+    <div
+      id="about-section"
+      class="row mx-0 d-flex align-items-center justify-content-center p-5"
+    >
+      <!-- Text Box Tentang -->
+      <div class="text-center col-10 px-0" style="background-color: #028E58; border-radius: 10px; border: #000 1px solid;">
+        <div class="d-flex flex-lg-row flex-column-reverse text-center col-12" style="background-color: #FEBF30; border-radius: 10px; border: #000 1px solid; margin-left: -15px; margin-top: -10px;">
+          <!-- Deskripsi Tentang -->
+        <div id="about-description" class="col-12 col-lg-6 py-5">
+          <h1 class="text-light" style="font-size: 40px; font-weight: 900">
+            TENTANG BANDROS
+          </h1>
+          <p
+            class="text-start text-light px-5"
+          >
+            Bandros (Bandung Tour on Bus) menjadi alternatif transportasi bagi
+            masyarakat dan wisatawan yang melancong ke Kota Bandung untuk
+            jalan-jalan di kota ini sesuai rute. Dengan hadirnya bus berdesain
+            klasik terbuka dan sebagian tanpa kaca jendela ini memberi sensasi
+            lain saat tamasya.
+          </p>
+          <button
+            class="btn btn-success text-light px-5 mt-5"
+            style="font-size: 20px; font-weight: 600"
+            data-bs-toggle="modal"
+            data-bs-target="#modalAbout"
+          >
+            Selengkapnya...
+          </button>
+          <!-- Modal Deskripsi -->
+          <div
+            class="modal fade"
+            id="modalAbout"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content border border-light">
+                <div class="modal-header bg-success" data-bs-theme="dark">
+                  <h1
+                    class="modal-title fs-5 text-light"
+                    id="exampleModalLabel"
+                  >
+                    TENTANG BANDROS
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div
+                  class="modal-body bg-success text-light text-start px-5"
+                >
+                  <img
+                    class="img img-fluid rounded border border-light"
+                    src="assets/image/169251567312-bandros-bandung-tour-on-bus.jpg"
+                    alt=""
+                  />
+                  <p class="pt-3" style="font-size: 16px; font-weight: 500;">
+                    Dalam kota yang kaya akan sejarah dan pesonanya, Bandung
+                    Tour on Bus membawa Anda dalam perjalanan yang memikat
+                    melalui titik-titik bersejarah di daerah Kota Bandung.
+                    Dengan pilihan rute yang tersedia, kami akan membawa Anda
+                    pada petualangan yang mempesona, mengeksplorasi keindahan
+                    budaya dan warisan sejarah kota ini.
+                  </p>
+                  <p style="font-size: 16px; font-weight: 500;">
+                    Dengan bantuan aplikasi mobile BEMO, Anda dapat melacak dan
+                    menemukan rute Bandros yang sesuai dengan minat Anda.
+                    Bandros adalah bus ikonik kami yang akan membawa Anda
+                    melalui perjalanan yang memukau sejarah Kota Bandung.
+                    Aplikasi BEMO akan membantu Anda dengan rute dan pelacakan
+                    yang mudah, memastikan Anda tidak melewatkan momen
+                    bersejarah.
+                  </p>
+                  <img
+                    class="img img-fluid rounded border border-light"
+                    src="assets/image/harga-tiket-bus-bandros.jpg"
+                    alt=""
+                  />
+                  <p class="pt-3" style="font-size: 16px; font-weight: 500;">
+                    Kami memahami betapa pentingnya kenyamanan dan pengalaman
+                    yang terjangkau. Oleh karena itu, setiap penumpang dikenakan
+                    tarif yang ramah di kantong, hanya Rp20.000 untuk single
+                    trip satu rute atau Rp40.000 untuk multi-trip semua rute.
+                    Perjalanan dimulai setiap hari mulai pukul 08.00 hingga
+                    16.00, memungkinkan Anda untuk menikmati keindahan Bandung
+                    kapan saja.
+                  </p>
+                </div>
+                <div class="modal-footer bg-success">
+                  <button
+                    type="button"
+                    class="btn btn-light text-dark"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Galeri Tentang Menggunakan Carousel Bootstrap -->
+        <div
+          id="about-gallery"
+          class="mx-0 col-12 col-lg-6 d-flex align-items-center justify-content-center pt-5 py-lg-5"
+        >
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide col-10"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner rounded border border-success">
+              <div class="carousel-item active">
+                <img
+                  src="assets/image/bandroskuning-photo.jpg"
+                  class="d-block w-100"
+                  alt="Bandros Kuning dan Pesepeda"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/image/bandroshijau-photo.jpg"
+                  class="d-block w-100"
+                  alt="Bandros Hijau"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/image/bandrosungu-photo.jpg"
+                  class="d-block w-100"
+                  alt="Bandros Ungu"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bagian Kontak -->
+    <div id="contact-section" class="col-12 d-flex justify-content-center align-items-center flex-column flex-lg-row py-5">
+      <div class="rounded-circle">
+        <img src="assets/logo/tipweb_c_logo.svg" alt="">
+        
+      </div>
+      <div class="col-lg-4 col-8 px-0 mt-5 mx-lg-5" style="background-color: #028E58; border-radius: 10px; border: #000 1px solid;">
+          <div id="contact-textbox" class="text-light d-flex flex-column col-12 justify-content-center align-items-center" style="background-color: #FEBF30; border-radius: 10px; border: #000 1px solid; margin-left: -5px; margin-bottom: 5px;">
+            <img class="col-6 mt-3 rounded border border-success" src="assets/image/foto_athif.JPG" alt="">
+            <h4 class="mt-2">Faiq Athif Nurrahim Hadiko</h4>
+            <p>Website: <a href="https://faiq-athif.site">faiq-athif.site</a></p>
+            <p>Email: faiq.athif@gmail.com</p>
+            <p>Telkom University</p>
+            <p>Contact me: 087711934341</p>
+          </div>
+        </div>  
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
